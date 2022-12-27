@@ -1,0 +1,55 @@
+:root {
+  --background: hsl(263, 63%, 83%);
+  --background-lighter: hsl(263, 63%, 87%);
+}
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+}
+
+h1,
+h2,
+h3 {
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif; */
+  font-weight: 700;
+}
+
+.drop-cap {
+  float: left;
+  font-size: 52px;
+  line-height: 1em;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.columns-container {
+  width: 100%;
+  background-color: var(--background);
+}
+
+.columns-container h3 {
+  margin-left: 3%;
+}
+
+.columns-container > div {
+  width: 45.5%;
+  background-color: var(--background-lighter);
+  text-align: left;
+}
+
+.columns-container > div:nth-of-type(odd) {
+  float: left;
+  margin: 0 1.5% 0 3%;
+}
+
+.columns-container > div:nth-of-type(even) {
+  float: right;
+  margin: 0 3% 0 1.5%;
+}
